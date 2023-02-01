@@ -1,0 +1,137 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color:  #e6e6e6;
+    font-family: 'Roboto', sans-serif; 
+}
+.heading{
+    background-color:  #f1c12e;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 10px 16px rgb(248, 247, 247);
+}
+.heading h1{
+    padding-top: 10px; 
+    padding-left: 20px;
+}
+.heading h1 i{
+    margin-right: 20px;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+button.learn-more{
+    width: 200px;
+}
+button.learn-more .circle{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    display: block;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background: #f1c12e;
+    border-radius: 100px;
+}
+button.learn-more .circle i{
+   margin-top: 8px;
+   align-items: center;
+   justify-content: center; 
+   font-size: 30px;
+}
+button.learn-more .button-text{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+button:hover .circle{
+    width: 100%;
+}
+button:hover .button-text{
+    color: #fff;
+}
+button:hover .circle i{
+    color: #f1c12e;
+}
+.notes{
+    display: inline;
+}
+.note{
+    background-color: #fff;
+    margin: 30px 20px;
+    height: 200px;
+    width: 300px;
+    overflow-y: scroll;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.note .operation{
+    display: flex;
+    justify-content: flex-end;
+}
+.note .operation button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.note .main{
+    width: 275px;
+}
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+    border: none;
+    height: 200px;
+    width: 275px;
+    margin-left: 5px;
+}
+.fa-edit{
+    color: #fff;
+    padding: 8px;
+    background-color: #2ecc71;
+    border-radius: 100%;
+}
+.fa-trash-alt{
+    color: #fff;
+    padding: 8px;
+    background-color: #e74c3c;
+    border-radius: 100%;
+}
+.fa-edit:hover{
+    color: #2ecc71;
+    background-color: #fff;
+    filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+    transition: all ease-in-out 0.3s;
+}
+.fa-trash-alt:hover{
+    color: #e74c3c;
+    background-color: #fff;
+    filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+    transition: all ease-in-out 0.3s;
+}
+.hidden{
+    display: none;
+}
