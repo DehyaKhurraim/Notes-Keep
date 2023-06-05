@@ -26,7 +26,7 @@ To run NoteKeeper, you need to have a modern web browser installed on your compu
 To use NoteKeeper, simply download or clone the repository to your local machine:
 
 ```
-git clone https://github.com/your-username/notekeeper.git
+git clone https://github.com/DehyaKhurraim/Notes-Keep.git
 ```
 
 ## Usage
